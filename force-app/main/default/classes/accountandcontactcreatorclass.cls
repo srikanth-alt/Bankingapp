@@ -6,4 +6,9 @@ public class accountandcontactcreatorclass {
         c.AccountId=con.AccountId;
     }
 
+    @auraenabled  
+    public static void createAccount(Account acc){
+        Account a=new Account ();
+        a.Name=acc.Name;
+    }
 }
